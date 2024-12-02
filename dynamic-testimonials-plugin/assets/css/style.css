@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.testimonial-item {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Form Styles */
+.testimonial-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.testimonial-form input,
+.testimonial-form textarea,
+.testimonial-form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.testimonial-form button {
+    padding: 10px 20px;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rating Styles */
+.rating {
+    font-size: 1.2em;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.rating span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-right: 2px;
+}
+
+/* Header Section */
+.tmp-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tmp-header h1 {
+    font-size: 2.5em;
+    color: #0073aa;
+}
+
+/* Navbar Styles */
+.tmp-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0073aa;
+    padding: 10px;
+}
+
+.tmp-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.tmp-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section */
+.tmp-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tmp-section {
+    width: 48%;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.tmp-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .tmp-content {
+        flex-direction: column;
+    }
+
+    .tmp-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
